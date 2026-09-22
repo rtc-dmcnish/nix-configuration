@@ -4,7 +4,7 @@
   # nix.enable = false;                      # uncomment if using Determinate Nix
 
   system.primaryUser = "dmcnish";           # required for user-scoped options (defaults, homebrew)
-  users.users.dmcnish.home = "/Users/dmcnish";   # home-manager needs this
+  users."dmcnish".home = "/Users/dmcnish";   # home-manager needs this
 
   programs.zsh.enable = true;
   environment.systemPackages = with pkgs; [ git vim ];
