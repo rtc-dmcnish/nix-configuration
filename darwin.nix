@@ -12,4 +12,5 @@
   system.defaults.dock.autohide = true;      # example macOS default
 
   system.stateVersion = 6;
+  security.pam.enableSudoTouchIdAuth = true; 
 }
