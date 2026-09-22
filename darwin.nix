@@ -9,7 +9,7 @@
   programs.zsh.enable = true;
   environment.systemPackages = with pkgs; [ git vim ];
 
-  system.defaults.dock.autohide = true;      # example macOS default
+  system.defaults.dock.autohide = false;      # example macOS default
 
   system.stateVersion = 6;
   

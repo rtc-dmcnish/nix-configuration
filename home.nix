@@ -21,7 +21,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      update = "sudo darwin-rebuild switch --flake $HOME/.config/nix-darwin";
+      conf-update = "sudo darwin-rebuild switch --flake $HOME/.config/nix-darwin";
     };
 
     history.size = 10000;
