@@ -20,6 +20,11 @@
     subnetcalc 
     github-cli 
     bruno 
+    inkscape
+    drawio
+    librewolf
+    joplin-desktop
+    calibre
   ];
 
   homebrew = {
@@ -30,18 +35,19 @@
     brews = [];
     casks = [
       "signal"
-      "joplin"
       "1password-cli"
-      "drawio"
       "copilot-cli"
       "kitty"
-      "librewolf"
-      "inkscape"
       "emacs-plus-app"
       "fluor"
-      "calibre"
       "visual-studio-code"
       "marta"
+      "basictex"
+      "fluor"
+      "keepassxc"
+      "meld"
+      "thunderbird"
+      "viscosity"
     ];
   };
 
