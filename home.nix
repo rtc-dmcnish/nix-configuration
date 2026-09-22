@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   home.stateVersion = "25.11";   # set once to the release you start on; don't bump it casually
 
-  home.packages = with pkgs; [ helix ripgrep jq fd mise bgpq4 subnetcalc github-cli ];
+  home.packages = with pkgs; [ helix ripgrep jq fd mise bgpq4 subnetcalc github-cli bruno ];
 
   programs.git = {
     enable = true;
