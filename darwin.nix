@@ -7,7 +7,21 @@
   users.users."dmcnish".home = "/Users/dmcnish";   # home-manager needs this
 
   programs.zsh.enable = true;
-  environment.systemPackages = with pkgs; [ git vim nerd-fonts.hack ];
+
+  environment.systemPackages = with pkgs; [ 
+    helix 
+    ripgrep 
+    jq 
+    fd 
+    git 
+    vim 
+    nerd-fonts.hack 
+    bgpq4 
+    subnetcalc 
+    github-cli 
+    bruno 
+  ];
+
   homebrew = {
     enable = true;
     enableZshIntegration = true;
