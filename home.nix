@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   home.stateVersion = "25.11";   # set once to the release you start on; don't bump it casually
 
-  home.packages = with pkgs; [ helix ripgrep jq fd ];
+  home.packages = with pkgs; [ helix ripgrep jq fd mise ];
 
   programs.git = {
     enable = true;
@@ -9,5 +9,34 @@
     settings.user.email = "dmcnish@rtctel.com";
   };
 
-  programs.zsh.enable = true;
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+
+    shellAliases = {
+      update = "sudo darwin-rebuild switch --flake $HOME/.config/nix-darwin";
+    };
+
+    history.size = 10000;
+
+    initContent = ''
+      # enable orbstack commands
+      if [ -f ~/.orbstack/shell/init.zsh ]; then
+        source ~/.orbstack/shell/init.zsh
+      fi
+      # enable mise-en-plase
+      if command -v mise &> /dev/null; then
+        eval "$(mise activate zsh)"
+      fi
+    '';
+    
+  };
+
 }
