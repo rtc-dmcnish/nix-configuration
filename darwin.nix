@@ -10,6 +10,7 @@
   environment.systemPackages = with pkgs; [ git vim ];
   homebrew = {
     enable = true;
+    enableZshIntegration = true;
     # onActivation.cleanup = "uninstall";
     taps = [];
     brews = [];
@@ -18,7 +19,7 @@
       "joplin"
       "1password-cli"
     ];
-  }
+  };
 
   system.defaults.dock.autohide = false;      # example macOS default
 
