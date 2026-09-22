@@ -18,6 +18,7 @@
       "signal"
       "joplin"
       "1password-cli"
+      "drawio"
     ];
   };
 
