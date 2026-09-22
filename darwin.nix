@@ -19,6 +19,14 @@
       "joplin"
       "1password-cli"
       "drawio"
+      "copilot-cli"
+      "kitty"
+      "librewolf"
+      "inkscape"
+      "emacs-plus-app"
+      "fluor"
+      "calibre"
+      "visual-studio-code"
     ];
   };
 
