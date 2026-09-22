@@ -18,7 +18,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.backupFileExtension = "hm-backup";
-          home-manager.users.USERNAME = import ./home.nix;
+          home-manager.users."dmcnish" = import ./home.nix;
         }
       ];
     };
