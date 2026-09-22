@@ -30,7 +30,9 @@
     enable = true;
     enableZshIntegration = true;
     onActivation.cleanup = "uninstall";
-    taps = [];
+    taps = [
+      "d12frosted/emacs-plus"
+    ];
     brews = [];
     casks = [
       "signal"
