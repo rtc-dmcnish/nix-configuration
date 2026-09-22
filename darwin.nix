@@ -24,7 +24,6 @@
     drawio
     librewolf
     joplin-desktop
-    calibre
   ];
 
   homebrew = {
