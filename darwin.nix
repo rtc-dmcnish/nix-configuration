@@ -30,7 +30,7 @@
   homebrew = {
     enable = true;
     enableZshIntegration = true;
-    # onActivation.cleanup = "uninstall";
+    onActivation.cleanup = "uninstall";
     taps = [];
     brews = [];
     casks = [
