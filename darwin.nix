@@ -11,15 +11,6 @@
   environment.systemPackages = with pkgs; [ 
     git 
     vim 
-    nerd-fonts.hack 
-    bruno 
-    inkscape
-    librewolf
-    joplin-desktop
-    thunderbird
-    signal-desktop
-    keepassxc
-    meld
   ];
 
   homebrew = {

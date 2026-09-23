@@ -6,6 +6,9 @@
     bgpq4 
     subnetcalc
     drawio
+    signal-desktop
+    thunderbird
+    joplin-desktop
     ripgrep 
     jq 
     fd 
@@ -15,6 +18,12 @@
     timewarrior
     github-cli 
     coreutils-prefixed
+    nerd-fonts.hack 
+    bruno 
+    inkscape
+    librewolf
+    keepassxc
+    meld
   ];
 
   programs.git = {
