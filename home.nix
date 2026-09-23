@@ -4,6 +4,7 @@
   home.packages = with pkgs; [ 
     mise 
     starship
+    coreutils
   ];
 
   programs.git = {
