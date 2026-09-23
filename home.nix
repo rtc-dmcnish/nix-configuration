@@ -2,8 +2,18 @@
   home.stateVersion = "25.11";   # set once to the release you start on; don't bump it casually
 
   home.packages = with pkgs; [ 
+    helix 
+    bgpq4 
+    subnetcalc
+    drawio
+    ripgrep 
+    jq 
+    fd 
     mise 
     starship
+    taskwarrior3
+    timewarrior
+    github-cli 
     coreutils-prefixed
   ];
 

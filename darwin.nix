@@ -9,28 +9,17 @@
   programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [ 
-    helix 
-    ripgrep 
-    jq 
-    fd 
     git 
     vim 
     nerd-fonts.hack 
-    bgpq4 
-    subnetcalc 
-    github-cli 
     bruno 
     inkscape
-    drawio
     librewolf
     joplin-desktop
     thunderbird
     signal-desktop
     keepassxc
     meld
-    eza
-    taskwarrior3
-    timewarrior
   ];
 
   homebrew = {
