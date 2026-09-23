@@ -24,6 +24,10 @@
     drawio
     librewolf
     joplin-desktop
+    thunderbird
+    signal-desktop
+    keepassxc
+    meld
   ];
 
   homebrew = {
@@ -34,12 +38,10 @@
       {
        name = "d12frosted/emacs-plus";
        trusted = true;
-
       }
     ];
     brews = [];
     casks = [
-      "signal"
       "1password-cli"
       "copilot-cli"
       "kitty"
@@ -49,16 +51,11 @@
       "marta"
       "basictex"
       "fluor"
-      "keepassxc"
-      "meld"
-      "thunderbird"
       "viscosity"
     ];
   };
 
   system.defaults.dock.autohide = false;      # example macOS default
-
   system.stateVersion = 6;
-  
   security.pam.services.sudo_local.touchIdAuth = true;
 }
