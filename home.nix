@@ -25,6 +25,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
+      ls = "gls --color=auto --hyperlink=auto";
       conf-update = "sudo darwin-rebuild switch --flake $HOME/.config/nix-darwin";
     };
 
