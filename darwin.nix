@@ -59,6 +59,10 @@
   };
 
   system.defaults.dock.autohide = false;      # example macOS default
+  system.defaults.screencapture.target = "clipboard";
+  system.defaults.finder.AppleShowAllFiles = true;
+  system.defaults.finder.AppleShowAllExtensions = true; 
+  system.defaults.dock.orientation = "left";
   system.stateVersion = 6;
   security.pam.services.sudo_local.touchIdAuth = true;
 }
