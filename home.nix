@@ -6,7 +6,6 @@
     bgpq4 
     subnetcalc
     drawio
-    signal-desktop
     thunderbird
     joplin-desktop
     ripgrep 

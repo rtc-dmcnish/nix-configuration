@@ -25,6 +25,7 @@
     ];
     brews = [];
     casks = [
+      "signal"
       "1password-cli"
       "copilot-cli"
       "kitty"
