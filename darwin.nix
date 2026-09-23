@@ -31,7 +31,11 @@
     enableZshIntegration = true;
     onActivation.cleanup = "uninstall";
     taps = [
-      "d12frosted/emacs-plus"
+      {
+       name = "d12frosted/emacs-plus";
+       trusted = true;
+
+      }
     ];
     brews = [];
     casks = [
