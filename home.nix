@@ -27,7 +27,7 @@
       sync.local.server_dir="~/Library/Mobile Documents/iCloud~com~mav~taskchamp/Documents/taskchamp";
       dateformat = "Y-M-D";
       report.next = {
-        filter =  "+PENDING -BLOCKED -WAITING -hold limit:page -p";
+        filter =  "+PENDING -BLOCKED -WAITING -hold limit:page";
       }; 
       report.work = {
         description = "Work Tasks"; 
