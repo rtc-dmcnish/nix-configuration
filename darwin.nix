@@ -28,6 +28,7 @@
     signal-desktop
     keepassxc
     meld
+    eza
   ];
 
   homebrew = {
