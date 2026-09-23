@@ -29,6 +29,8 @@
     keepassxc
     meld
     eza
+    taskwarrior3
+    timewarrior
   ];
 
   homebrew = {
