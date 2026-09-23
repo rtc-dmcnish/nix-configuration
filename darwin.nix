@@ -60,7 +60,7 @@
 
   system.defaults.dock.autohide = false;      # example macOS default
   system.defaults.screencapture.target = "clipboard";
-  system.defaults.finder.AppleShowAllFiles = true;
+  system.defaults.NSGlobalDomain.AppleShowAllFiles = false;
   system.defaults.finder.AppleShowAllExtensions = true; 
   system.defaults.dock.orientation = "left";
   system.stateVersion = 6;
