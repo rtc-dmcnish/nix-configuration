@@ -25,17 +25,20 @@
     meld
   ];
 
+# Global git configuration
   programs.git = {
     enable = true;
     settings.user.name  = "Doug McNish";
     settings.user.email = "dmcnish@rtctel.com";
   };
 
+# Shell sugar
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
   };
 
+# Taskwarrior configuration
   programs.taskwarrior = {
     enable = true;
     package = pkgs.taskwarrior3;
@@ -64,6 +67,7 @@
     };
   };
 
+  # Local shell configuration
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -93,6 +97,8 @@
     '';
     
   };
+
+  # Configuration for KiTTY terminal
   home.file.".config/kitty/"= {
     source = ./kitty;
     recursive=true;
