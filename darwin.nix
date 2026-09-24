@@ -36,6 +36,7 @@
       "basictex"
       "fluor"
       "viscosity"
+      "hammerspoon"
     ];
   };
 
