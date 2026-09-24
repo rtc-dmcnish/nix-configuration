@@ -58,7 +58,7 @@
       };
       theme = "nord";
     };
-}
+};
 
 # Shell sugar
   programs.starship = {
