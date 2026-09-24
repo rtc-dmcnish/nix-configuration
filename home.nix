@@ -94,7 +94,7 @@
     
   };
   home.file.".config/kitty/"= {
-    source = ./kitty/;
+    source = ./kitty;
     recursive=true;
   };
 
