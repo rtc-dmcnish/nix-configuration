@@ -109,6 +109,8 @@
     shellAliases = {
       ls = "gls --color=auto --hyperlink=auto";
       conf-update = "sudo darwin-rebuild switch --flake $HOME/.config/nix-darwin";
+      tw = "task work"; 
+      th = "task +p";
     };
 
     history.size = 10000;
