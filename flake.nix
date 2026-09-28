@@ -22,6 +22,7 @@
         }
       ];
     };
+
     nixosConfigurations."delrey" = nixpkgs.lib.nixosSystem {
       modules = [
         ./hosts/delrey.nix
