@@ -13,14 +13,8 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
-    sessionVariables = {
-      OBJC_DISABLE_INITIALIZE_FORK_SAFETY = "YES";
-    };
 
-    shellAliases = {
-      ls = "gls --color=auto --hyperlink=auto";
-
-    };
+#     shellAliases = {};
 
     history.size = 10000;
 

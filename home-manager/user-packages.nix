@@ -14,7 +14,6 @@
     taskwarrior3
     timewarrior
     github-cli
-    coreutils-prefixed
     nerd-fonts.hack
     bruno
     inkscape

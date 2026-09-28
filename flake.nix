@@ -12,14 +12,26 @@
   outputs = { self, nixpkgs, nix-darwin, home-manager, ... }: {
     darwinConfigurations."HAL69420" = nix-darwin.lib.darwinSystem {
       modules = [
-        ./darwin.nix
+        ./hosts/HAL69420.nix
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.backupFileExtension = "hm-backup";
-          home-manager.users.dmcnish = import ./home.nix;
+          home-manager.users.dmcnish = import ./home-manager/default.nix;
         }
+      ];
+    };
+    nixosConfigurations."delrey" = nixpkgs.lib.nixosSystem {
+      modules = [
+        ./hosts.delrey.nix
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.backupFileExtension = "hm-backup";
+          home-manager.users.dag = import ./home-manager/default.nix;
+        };
       ];
     };
   };
