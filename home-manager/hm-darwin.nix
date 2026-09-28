@@ -2,7 +2,7 @@
     programs.zsh.sessionVariables = {
         OBJC_DISABLE_INITIALIZE_FORK_SAFETY = "YES";
     };
-    shellAliases = {
+    programs.zsh.shellAliases = {
       conf-update = "sudo darwin-rebuild switch --flake $HOME/.config/nix-darwin#\$(hostname)";
       ls = "gls --color=auto --hyperlink=auto";
     };
