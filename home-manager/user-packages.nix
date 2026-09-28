@@ -1,0 +1,25 @@
+{pkgs,...}:
+{
+  home.packages = with pkgs; [
+    helix
+    bgpq4
+    subnetcalc
+    drawio
+    joplin-desktop
+    ripgrep
+    jq
+    fd
+    mise
+    starship
+    taskwarrior3
+    timewarrior
+    github-cli
+    coreutils-prefixed
+    nerd-fonts.hack
+    bruno
+    inkscape
+    librewolf
+    keepassxc
+    meld
+  ];
+}
