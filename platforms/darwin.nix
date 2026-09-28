@@ -9,9 +9,6 @@
       conf-update = "sudo darwin-rebuild switch --flake $HOME/.config/nix-darwin#\$(hostname)";
       ls = "gls --color=auto --hyperlink=auto";
     };
-    sessionVariables = {
-      OBJC_DISABLE_INITIALIZE_FORK_SAFETY = "YES";
-    };
   };
 
   environment.systemPackages = with pkgs; [ 
