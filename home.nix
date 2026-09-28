@@ -127,10 +127,15 @@
     
   };
 
+  home.file.".hammerspoon/" = {
+    source = ./hammerspoon;
+    recursive = true;
+  };
+
   # Configuration for KiTTY terminal
   home.file.".config/kitty/"= {
     source = ./kitty;
-    recursive=true;
+    recursive = true;
   };
 
 }
