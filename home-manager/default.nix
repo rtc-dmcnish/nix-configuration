@@ -6,5 +6,6 @@
       ./helix.nix
       ./zsh.nix
       ./dotfiles.nix
+      ./taskwarrior.nix
     ];
 }
