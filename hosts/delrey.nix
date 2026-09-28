@@ -85,6 +85,9 @@
   };
 
 
+  # install ZSH
+  programs.zsh.enable = true;
+
   # Install git
   programs.git.enable = true;
 
