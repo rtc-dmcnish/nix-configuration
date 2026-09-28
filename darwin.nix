@@ -45,6 +45,6 @@
   system.defaults.NSGlobalDomain.AppleShowAllFiles = false;
   system.defaults.finder.AppleShowAllExtensions = true; 
   system.defaults.dock.orientation = "left";
-  system.stateVersion = 6;
+  system.stateVersion = 7;
   security.pam.services.sudo_local.touchIdAuth = true;
 }
