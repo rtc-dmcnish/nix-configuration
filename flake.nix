@@ -1,5 +1,5 @@
 {
-  description = "macOS system config";
+  description = "system config";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -18,7 +18,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.backupFileExtension = "hm-backup";
-          home-manager.users.dmcnish = import ./home-manager/default.nix;
+          home-manager.users.dmcnish = import ./home-manager/hm-darwin.nix;
         }
       ];
     };
