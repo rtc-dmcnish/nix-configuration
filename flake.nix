@@ -31,7 +31,7 @@
           home-manager.useUserPackages = true;
           home-manager.backupFileExtension = "hm-backup";
           home-manager.users.dag = import ./home-manager/default.nix;
-        };
+        }
       ];
     };
   };
