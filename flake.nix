@@ -27,6 +27,7 @@
         ./hosts/delrey.nix
         home-manager.nixosModules.home-manager
         {
+          inherit (inputs) self;
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.backupFileExtension = "hm-backup";
