@@ -9,7 +9,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, nix-darwin, home-manager, ... }: {
+  outputs = { self, nixpkgs, nix-darwin, home-manager, ... }@inputs: {
     darwinConfigurations."HAL69420" = nix-darwin.lib.darwinSystem {
       modules = [
         ./hosts/HAL69420.nix
