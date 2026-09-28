@@ -24,7 +24,7 @@
     };
     nixosConfigurations."delrey" = nixpkgs.lib.nixosSystem {
       modules = [
-        ./hosts.delrey.nix
+        ./hosts/delrey.nix
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
