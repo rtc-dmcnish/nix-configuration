@@ -79,7 +79,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
-    #  thunderbird
     ];
     shell = pkgs.zsh;
   };
@@ -94,7 +93,10 @@
   programs.firefox.enable = true;
 
   # Install thunderbird
-  programs.thunderbird-esr.enable = true; 
+  programs.thunderbird = {
+    enable = true;
+    package = pkgs.thunderbird-esr;
+  }; 
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
