@@ -79,11 +79,11 @@
       enable = true;
       config = ''
         [sssd]
-        domains = your_domain_lowercase
+        domains = rtctel.com
         config_file_version = 2
         services = nss, pam
 
-        [domain/your_domain_lowercase]
+        [domain/rtctel.com]
         override_shell = /run/current-system/sw/bin/zsh
         krb5_store_password_if_offline = True
         cache_credentials = True
@@ -91,7 +91,7 @@
         realmd_tags = manages-system joined-with-samba
         id_provider = ad
         fallback_homedir = /home/%u
-        ad_domain = your_domain_lowercase
+        ad_domain = rtctel.com
         use_fully_qualified_names = false
         ldap_id_mapping = false
         auth_provider = ad
