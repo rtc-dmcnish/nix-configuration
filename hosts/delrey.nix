@@ -48,11 +48,11 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
-  services.fprintd = {
-    enable = true;
-    tod.enable = true;
-    tod.driver = pkgs.libfprint-2-tod1-vfs0090; 
-  };
+  # services.fprintd = {
+  #   enable = true;
+  #   tod.enable = true;
+  #   tod.driver = pkgs.libfprint-2-tod1-vfs0090; 
+  # };
 
   # Configure keymap in X11
   services.xserver.xkb = {
