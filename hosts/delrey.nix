@@ -84,7 +84,6 @@
     shell = pkgs.zsh;
   };
 
-
   # install ZSH
   programs.zsh.enable = true;
 

@@ -35,7 +35,6 @@
           home-manager.backupFileExtension = "hm-backup";
           home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users.dag = import ./home-manager/default.nix;
-          #home-manager.users."dmcnish@rtctel.com" = import ./home-manager/default.nix;
         }
       ];
     };
