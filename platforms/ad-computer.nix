@@ -92,7 +92,7 @@
         id_provider = ad
         fallback_homedir = /home/%u
         ad_domain = rtctel.com
-        use_fully_qualified_names = false
+        use_fully_qualified_names = true
         ldap_id_mapping = false
         auth_provider = ad
         access_provider = ad
