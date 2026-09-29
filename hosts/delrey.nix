@@ -106,6 +106,7 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowBroken = true; 
 
   programs._1password.enable = true;
   programs._1password-gui.enable = true;
