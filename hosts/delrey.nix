@@ -84,9 +84,6 @@
     shell = pkgs.zsh;
   };
 
-  users.users."dmcnish@rtctel.com".isNormalUser = true; 
-  users.groups.networkmanager.members = ["dmcnish@rtctel.com"];
-  users.groups.wheel.members = ["dmcnish@rtctel.com"];
 
   # install ZSH
   programs.zsh.enable = true;
