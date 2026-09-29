@@ -3,13 +3,14 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nix-stable.url = "github:NixOS/nixpkgs/nixos-26.05";
     nix-darwin.url = "github:nix-darwin/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = { self, nixpkgs, nix-darwin, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, nix-stable, nix-darwin, home-manager, ... }@inputs: {
     darwinConfigurations."HAL69420" = nix-darwin.lib.darwinSystem {
       modules = [
         ./hosts/HAL69420.nix
@@ -26,6 +27,7 @@
     nixosConfigurations."delrey" = nixpkgs.lib.nixosSystem {
       modules = [
         ./hosts/delrey.nix
+        ./platforms/ad-computer.nix
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;

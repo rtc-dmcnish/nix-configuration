@@ -158,7 +158,6 @@
 
   imports =
     [ (modulesPath + "/installer/scan/not-detected.nix")
-      ../platforms/ad-computer.nix
     ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" "usb_storage" "sd_mod" ];

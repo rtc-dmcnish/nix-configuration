@@ -14,7 +14,7 @@
   environment.systemPackages = with pkgs; [
     adcli # Helper library and tools for Active Directory client operations
     oddjob # Odd Job Daemon
-    samba4Full # Standard Windows interoperability suite of programs for Linux and Unix
+    samba4 # Standard Windows interoperability suite of programs for Linux and Unix
     sssd # System Security Services Daemon
     krb5 # MIT Kerberos 5
     realmd # DBus service for configuring Kerberos and other
