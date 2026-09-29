@@ -94,6 +94,9 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # Install thunderbird
+  programs.thunderbird.enable = true; 
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
