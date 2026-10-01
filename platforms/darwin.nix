@@ -21,7 +21,9 @@
        trusted = true;
       }
     ];
-    brews = [];
+    brews = [
+      "curl"
+    ];
     casks = [
       "signal"
       "1password-cli"
