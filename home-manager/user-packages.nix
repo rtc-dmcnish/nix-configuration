@@ -5,7 +5,6 @@
     bgpq4
     subnetcalc
     drawio
-    joplin-desktop
     ripgrep
     jq
     fd
