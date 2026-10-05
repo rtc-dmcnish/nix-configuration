@@ -18,6 +18,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     m = "Mail",
     s = "Messages",
     t = "Remember The Milk",
+    b = "BBEdit",
   }
 })
 
