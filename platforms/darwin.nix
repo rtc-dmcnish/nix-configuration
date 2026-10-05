@@ -37,6 +37,7 @@
       "fluor"
       "viscosity"
       "hammerspoon"
+      "remember-the-milk"
     ];
   };
 
