@@ -14,7 +14,10 @@
   homebrew = {
     enable = true;
     enableZshIntegration = true;
-    onActivation.cleanup = "uninstall";
+    onActivation = { 
+      cleanup = "uninstall"; 
+      autoUpdate = true;   
+    };
     taps = [
       {
        name = "d12frosted/emacs-plus";
