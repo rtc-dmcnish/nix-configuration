@@ -17,6 +17,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     h = "Google Chat",
     m = "Mail",
     s = "Messages",
+    t = "Remember The Milk",
   }
 })
 
