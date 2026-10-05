@@ -19,7 +19,7 @@ spoon.SpoonInstall:andUse("AppLauncher", {
     s = "Messages",
     t = "Remember The Milk",
     b = "BBEdit",
-    q = "Signal",
+    o = "Signal",
   }
 })
 
