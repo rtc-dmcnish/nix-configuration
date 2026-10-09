@@ -1,5 +1,5 @@
 {
-  description = "system config";
+  description = "Desktop System Configuration";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
