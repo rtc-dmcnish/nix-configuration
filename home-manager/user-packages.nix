@@ -19,5 +19,6 @@
     librewolf
     keepassxc
     meld
+    jujutsu
   ];
 }
